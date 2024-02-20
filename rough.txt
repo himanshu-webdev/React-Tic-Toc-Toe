@@ -1,0 +1,28 @@
+import React from 'react'
+import Square from './Square'
+
+function Board() {
+  return (
+    <div className='flex flex-col justify-center items-center cursor-pointer'>
+        <div className='flex justify-evenly items-center bg-[#1f3540] border-4 border-[#0f1b21] rounded-[12px]'>
+          <Square />
+          <Square />
+          <Square />
+        </div>
+
+        <div className='flex justify-evenly items-center'>
+          <Square />
+          <Square />
+          <Square />
+        </div>
+
+        <div className='flex justify-evenly items-center'>
+          <Square />
+          <Square />
+          <Square />
+        </div>
+    </div>
+  )
+}
+
+export default Board
